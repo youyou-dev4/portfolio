@@ -17,6 +17,7 @@ Ce portfolio est une "Single Page Application" (SPA) moderne, développée pour 
 
 ## 🛠 Technologies utilisées
 
+
 * **Framework** : [React](https://react.dev/) (v18)
 * **Build Tool** : [Vite](https://vitejs.dev/)
 * **Styling** : [Tailwind CSS v4](https://tailwindcss.com/) (Nouvelle architecture)
@@ -28,21 +29,21 @@ Ce portfolio est une "Single Page Application" (SPA) moderne, développée pour 
 Si vous souhaitez tester ce projet sur votre machine, suivez ces étapes :
 
 ### 1. Cloner le projet
-```bash
+
 git clone [https://github.com/youyou-dev4/portfolio.git](https://github.com/youyou-dev4/portfolio.git)
 cd portfolio
 
-2. Installer les dépendances
+### 2. Installer les dépendances
 Assurez-vous d'avoir Node.js (version 20 ou supérieure) installé.
 
-Bash
 npm install
-3. Lancer le serveur de développement
+
+### 3. Lancer le serveur de développement
 Bash
 npm run dev
 Ouvrez ensuite votre navigateur sur http://localhost:5173.
 
-📂 Structure du projet
+### 📂 Structure du projet
 /public : Contient les fichiers statiques (CV, photos des projets, photo de profil).
 
 /src : Contient le code source React.
@@ -53,14 +54,14 @@ index.css : Configuration des directives Tailwind v4.
 
 main.jsx : Point d'entrée de l'application.
 
-📬 Contact
+### 📬 Contact
 Je suis actuellement à la recherche d'un stage de 3 mois minimum à partir du 13 avril 2026 (Objectif : Master 1 en alternance).
 
 Email : matoub.youness@gmail.com
 
-LinkedIn : Younes Matoub
+LinkedIn : [Younes Matoub](https://www.linkedin.com/in/younes-matoub/)
 
-GitHub : youyou-dev4
+GitHub : [youyou-dev4](https://github.com/youyou-dev4)
 
 © 2026 Younes Matoub. Développé avec React & Tailwind CSS.
 
