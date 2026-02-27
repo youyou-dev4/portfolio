@@ -1,68 +1,110 @@
-# Portfolio - Younes Matoub
+# Younes Matoub — Developer Portfolio
 
-Bienvenue sur le dépôt de mon portfolio personnel. Ce projet a été conçu pour présenter mon parcours, mes compétences et mes projets en tant qu'étudiant en L3 Informatique à l'Université de Lille.
+A modern, responsive personal portfolio built with **React + Vite**, featuring a dark/light theme toggle, FR/EN language switching, and a clean component architecture with separated styles and translation files.
 
-🔗 **[Voir le portfolio en ligne](METTRE_TON_LIEN_VERCEL_ICI)**
+---
 
-## 🚀 À propos
+## Features
 
-Ce portfolio est une "Single Page Application" (SPA) moderne, développée pour être rapide, responsive et facile à maintenir. Il met en avant ma recherche de stage pour **avril 2026**.
+- **Dark / Light mode** — smooth transition, persists via React state
+- **FR / EN language switch** — fully translated UI using dedicated translation files
+- **Responsive design** — mobile-first, adapts from 320px to 4K
+- **Project showcase** — 5 projects with image, tech stack, highlights and GitHub links
+- **Image fallback** — placeholder with colored gradient + emoji if project image is missing
+- **Smooth scroll navigation** — sticky navbar with blur effect on scroll
+- **Downloadable CV** — direct PDF download from the navbar and contact section
 
-### Fonctionnalités principales :
-* 🎨 **Design Responsive** : Adapté aux mobiles, tablettes et ordinateurs.
-* 🌗 **Mode Sombre / Clair** : Gestion dynamique du thème avec Tailwind CSS.
-* ⚡ **Performance** : Construit avec Vite pour un chargement ultra-rapide.
-* 📄 **CV Téléchargeable** : Accès direct à mon CV au format PDF.
-* 🛠 **Vitrine de projets** : Présentation détaillée de mes réalisations académiques et personnelles.
+---
 
-## 🛠 Technologies utilisées
+## Project Structure
 
+```
+portfolio/
+├── public/
+│   ├── cv.pdf                  # Your resume (PDF)
+│   ├── photo-profil.jpg        # Your profile photo
+│   └── projects/
+│       ├── tmdb.jpg
+│       ├── covoiturage.jpg
+│       ├── velos.jpg
+│       ├── autoecole.jpg
+│       └── amazighe.jpg
+└── src/
+    ├── Portfolio.jsx           # Main component + ProjectCard sub-component
+    ├── portfolio.css           # All styles (CSS variables, animations, responsive)
+    ├── fr.js                   # French translations & project data
+    ├── en.js                   # English translations & project data
+    ├── App.jsx                 # App entry — simply renders <Portfolio />
+    └── main.jsx                # Vite entry point
+```
 
-* **Framework** : [React](https://react.dev/) (v18)
-* **Build Tool** : [Vite](https://vitejs.dev/)
-* **Styling** : [Tailwind CSS v4](https://tailwindcss.com/) (Nouvelle architecture)
-* **Icônes** : [Lucide React](https://lucide.dev/)
-* **Déploiement** : Vercel
+---
 
-## 💻 Installation et lancement local
+## Getting Started
 
-Si vous souhaitez tester ce projet sur votre machine, suivez ces étapes :
+### Prerequisites
 
-### 1. Cloner le projet
+- [Node.js](https://nodejs.org/) v18+
+- npm or yarn
 
-git clone [https://github.com/youyou-dev4/portfolio.git](https://github.com/youyou-dev4/portfolio.git)
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/youyou-dev4/portfolio.git
 cd portfolio
 
-### 2. Installer les dépendances
-Assurez-vous d'avoir Node.js (version 20 ou supérieure) installé.
-
+# Install dependencies
 npm install
 
-### 3. Lancer le serveur de développement
-Bash
+# Start the dev server
 npm run dev
-Ouvrez ensuite votre navigateur sur http://localhost:5173.
+```
 
-### 📂 Structure du projet
-/public : Contient les fichiers statiques (CV, photos des projets, photo de profil).
+Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-/src : Contient le code source React.
+### Build for production
 
-App.jsx : Composant principal contenant toute la logique et l'interface.
+```bash
+npm run build
+```
 
-index.css : Configuration des directives Tailwind v4.
+The output will be in the `dist/` folder, ready to deploy.
 
-main.jsx : Point d'entrée de l'application.
+---
 
-### 📬 Contact
-Je suis actuellement à la recherche d'un stage de 3 mois minimum à partir du 13 avril 2026 (Objectif : Master 1 en alternance).
+## Tech Stack
 
-Email : matoub.youness@gmail.com
+| Layer | Technology |
+|---|---|
+| Framework | React 19 |
+| Build tool | Vite |
+| Styling | Plain CSS with CSS custom properties |
+| Icons | Lucide React |
+| Fonts | Syne (display) + Space Mono (code) via Google Fonts |
+| Deployment | Vercel / Netlify / GitHub Pages |
 
-LinkedIn : [Younes Matoub](https://www.linkedin.com/in/younes-matoub/)
+---
 
-GitHub : [youyou-dev4](https://github.com/youyou-dev4)
+## Key Files Explained
 
-© 2026 Younes Matoub. Développé avec React & Tailwind CSS.
+| File | Role |
+|---|---|
+| `Portfolio.jsx` | All layout logic, state (theme/lang/scroll), renders all sections |
+| `portfolio.css` | Every CSS rule — variables, animations, components, responsive breakpoints |
+| `fr.js` | French copy: nav labels, hero text, all 5 projects, skills, education, contact |
+| `en.js` | English copy: same structure as `fr.js` |
 
+---
 
+## Contact
+
+**Younes Matoub** — L3 Computer Science, University of Lille
+
+- [matoub.youness@gmail.com](mailto:matoub.youness@gmail.com)
+- [linkedin.com/in/younes-matoub](https://linkedin.com/in/younes-matoub)
+- [github.com/youyou-dev4](https://github.com/youyou-dev4)
+
+---
+
+*Looking for a 3-month+ internship from April 2026, followed by a work-study Master's degree.*
