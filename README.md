@@ -107,4 +107,4 @@ The output will be in the `dist/` folder, ready to deploy.
 
 ---
 
-*Looking for a 3-month+ internship from April 2026, followed by a work-study Master's degree.*
+*Looking for a +3-month internship from April 2026, followed by a work-study Master's degree.*
