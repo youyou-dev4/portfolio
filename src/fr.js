@@ -12,17 +12,17 @@ const fr = {
     title2: "Matoub",
     subtitle: "Développeur Full-Stack & Mobile · L3 Informatique · Université de Lille",
     description:
-      "Passionné par la conception de systèmes robustes et d'applications performantes. À la recherche d'un stage de minimum 3 mois, puis d'un Master en alternance pour continuer à grandir aux côtés d'équipes expertes.",
+      "Passionné par la conception de systèmes robustes et d'applications performantes. À la recherche d'un **stage de minimum 3 mois à partir d'avril 2026**, en vue de poursuivre sur un Master en alternance au sein d'une équipe expérimentée.",
     cta_contact: "Me contacter",
     cta_projects: "Voir mes projets",
+    mobility: "📍 Mobile : Métropole Lilloise & Île-de-France",
     card: {
       status_label: "STATUT",
       status_value: "Disponible",
       fields: [
         { label: "FORMATION", value: "L3 Info · Université de Lille" },
-        { label: "LOCALISATION", value: "Villeneuve D'Ascq, 59" },
+        { label: "LOCALISATION", value: "Métropole Lilloise & Île-de-France" },
         { label: "RECHERCHE", value: "Stage 3 mois min. · dès Avril 2026" },
-        { label: "OBJECTIF", value: "Master en alternance" },
       ],
       languages_label: "LANGUES",
     },
@@ -59,10 +59,10 @@ const fr = {
     languages_title: "Langues",
     tools_title: "Outils",
     languages: [
-      { lang: "Français", level: "C1 Expert", color: "#00ff88" },
-      { lang: "Anglais", level: "B2 Avancé", color: "#4f9eff" },
-      { lang: "Kabyle", level: "Natif", color: "#ff9f43" },
-      { lang: "Arabe", level: "Courant", color: "#a29bfe" },
+      { lang: "Français", level: "C1 Expert", color: "#c2622a" },
+      { lang: "Anglais", level: "B2 Avancé", color: "#8b4513" },
+      { lang: "Kabyle", level: "Natif", color: "#d4842e" },
+      { lang: "Arabe", level: "Courant", color: "#a06030" },
     ],
   },
   projects: {
@@ -86,7 +86,7 @@ const fr = {
           "Sécurité : CORS + variable d'environnement",
         ],
         github: "https://github.com/youyou-dev4/tmdb-symfony-react",
-        color: "#00ff88",
+        color: "#c2622a",
         icon: "🎬",
       },
       {
@@ -104,7 +104,7 @@ const fr = {
           "Tests fonctionnels & optimisation",
         ],
         github: "https://github.com/Sofiane-Meziane/Bladiway",
-        color: "#4f9eff",
+        color: "#8b4513",
         icon: "🚗",
       },
       {
@@ -122,7 +122,7 @@ const fr = {
           "Documentation UML complète",
         ],
         github: "https://github.com/youyou-dev4/Velos-libre-service",
-        color: "#ff9f43",
+        color: "#d4842e",
         icon: "🚲",
       },
       {
@@ -140,7 +140,7 @@ const fr = {
           "Module comptabilité intégré",
         ],
         github: "https://github.com/youyou-dev4/autoEcole",
-        color: "#a29bfe",
+        color: "#a06030",
         icon: "🚘",
       },
       {
@@ -158,7 +158,7 @@ const fr = {
           "Débogage et tests",
         ],
         github: "https://github.com/youyou-dev4/WikiZed",
-        color: "#fd79a8",
+        color: "#c87040",
         icon: "🌐",
       },
     ],
@@ -175,7 +175,7 @@ const fr = {
   contact: {
     section_label: "// contact",
     title: "Parlons-en 👋",
-    subtitle: "Je recherche un stage de minimum 3 mois à partir d'avril 2026, puis un Master en alternance.\nN'hésitez pas à me contacter !",
+    subtitle: "Je recherche un stage de minimum 3 mois à partir d'avril 2026, en vue d'un Master en alternance.\nMobile sur la métropole lilloise et en Île-de-France. N'hésitez pas à me contacter !",
     download_cv: "Télécharger mon CV",
     footer: "© 2026 · Younes Matoub · Portfolio React",
   },

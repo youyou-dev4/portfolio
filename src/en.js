@@ -12,17 +12,17 @@ const en = {
     title2: "Matoub",
     subtitle: "Full-Stack & Mobile Developer · L3 Computer Science · University of Lille",
     description:
-      "Passionate about building robust systems and high-performance applications. Looking for a minimum 3-month internship, then a work-study Master's degree to keep growing alongside experienced teams.",
+      "Passionate about building robust systems and high-performance applications. Looking for a **minimum 3-month internship starting April 2026**, with the goal of continuing into a work-study Master's degree alongside an experienced team.",
     cta_contact: "Get in touch",
     cta_projects: "View my projects",
+    mobility: "📍 Mobile: Lille Métropole & Île-de-France",
     card: {
       status_label: "STATUS",
       status_value: "Available",
       fields: [
         { label: "EDUCATION", value: "L3 CS · University of Lille" },
-        { label: "LOCATION", value: "Villeneuve D'Ascq, 59" },
+        { label: "LOCATION", value: "Lille Metro & Île-de-France" },
         { label: "LOOKING FOR", value: "Internship 3mo+ · from April 2026" },
-        { label: "GOAL", value: "Work-study Master's degree" },
       ],
       languages_label: "LANGUAGES",
     },
@@ -59,10 +59,10 @@ const en = {
     languages_title: "Languages",
     tools_title: "Tools",
     languages: [
-      { lang: "French", level: "C1 Expert", color: "#00ff88" },
-      { lang: "English", level: "B2 Advanced", color: "#4f9eff" },
-      { lang: "Kabyle", level: "Native", color: "#ff9f43" },
-      { lang: "Arabic", level: "Fluent", color: "#a29bfe" },
+      { lang: "French", level: "C1 Expert", color: "#c2622a" },
+      { lang: "English", level: "B2 Advanced", color: "#8b4513" },
+      { lang: "Kabyle", level: "Native", color: "#d4842e" },
+      { lang: "Arabic", level: "Fluent", color: "#a06030" },
     ],
   },
   projects: {
@@ -86,7 +86,7 @@ const en = {
           "Security: CORS + environment variable API key",
         ],
         github: "https://github.com/youyou-dev4/tmdb-symfony-react",
-        color: "#00ff88",
+        color: "#c2622a",
         icon: "🎬",
       },
       {
@@ -104,7 +104,7 @@ const en = {
           "Functional tests & performance optimization",
         ],
         github: "https://github.com/Sofiane-Meziane/Bladiway",
-        color: "#4f9eff",
+        color: "#8b4513",
         icon: "🚗",
       },
       {
@@ -122,7 +122,7 @@ const en = {
           "Full UML documentation",
         ],
         github: "https://github.com/youyou-dev4/Velos-libre-service",
-        color: "#ff9f43",
+        color: "#d4842e",
         icon: "🚲",
       },
       {
@@ -140,7 +140,7 @@ const en = {
           "Integrated accounting module",
         ],
         github: "https://github.com/youyou-dev4/autoEcole",
-        color: "#a29bfe",
+        color: "#a06030",
         icon: "🚘",
       },
       {
@@ -158,7 +158,7 @@ const en = {
           "Debugging and testing",
         ],
         github: "https://github.com/youyou-dev4/WikiZed",
-        color: "#fd79a8",
+        color: "#c87040",
         icon: "🌐",
       },
     ],
@@ -175,7 +175,7 @@ const en = {
   contact: {
     section_label: "// contact",
     title: "Let's talk 👋",
-    subtitle: "I'm looking for a 3-month+ internship starting April 2026, then a work-study Master's.\nFeel free to reach out!",
+    subtitle: "I'm looking for a 3-month+ internship starting April 2026, ideally leading into a work-study Master's.\nMobile across the Lille metropolitan area and Île-de-France. Feel free to reach out!",
     download_cv: "Download my Resume",
     footer: "© 2026 · Younes Matoub · React Portfolio",
   },

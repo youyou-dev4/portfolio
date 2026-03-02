@@ -20,8 +20,8 @@ const GROUP_ICONS = [
 
 /* ─── Component ─────────────────────────────────────────────── */
 export default function Portfolio() {
-  const [dark, setDark]     = useState(true);
-  const [lang, setLang]     = useState('fr');    // 'fr' | 'en'
+  const [dark, setDark]     = useState(false);   // light by default
+  const [lang, setLang]     = useState('fr');
   const [scrolled, setScrolled] = useState(false);
 
   const t = lang === 'fr' ? fr : en;
@@ -72,12 +72,13 @@ export default function Portfolio() {
       {/* ── HERO ────────────────────────────────────────────── */}
       <section id="about" className="hero grid-bg">
         <div className="hero__glow" />
+        <div className="hero__glow-2" />
 
         <div className="hero__grid fade-up">
           {/* Left content */}
           <div>
             <span className="hero__badge">
-              // {t.hero.status}
+              {t.hero.status}
             </span>
 
             <h1 className="hero__name">
@@ -87,7 +88,11 @@ export default function Portfolio() {
 
             <p className="hero__subtitle mono">{t.hero.subtitle}</p>
 
-            <p className="hero__description">{t.hero.description}</p>
+            <p className="hero__description">
+              {t.hero.description.split(/\*\*(.+?)\*\*/).map((part, i) =>
+                i % 2 === 1 ? <strong key={i} style={{ color: 'var(--accent)', fontWeight: 700 }}>{part}</strong> : part
+              )}
+            </p>
 
             <div className="hero__ctas">
               <a href="#contact" className="btn-primary">
@@ -113,7 +118,6 @@ export default function Portfolio() {
 
           {/* Right — status card */}
           <div className="status-card">
-            {/* Top accent line */}
             {/* Avatar */}
             <div className="status-card__avatar">
               <img
@@ -307,10 +311,11 @@ function ProjectCard({ project, seeCode }) {
           <a href={github} target="_blank" rel="noreferrer"
             style={{
               display: 'flex', alignItems: 'center', gap: 8,
-              padding: '10px 22px', background: '#fff', color: '#000',
-              borderRadius: 20, fontFamily: 'Space Mono, monospace',
-              fontSize: 13, fontWeight: 700, textDecoration: 'none',
-              transform: 'translateY(4px)', transition: 'transform 0.2s',
+              padding: '10px 22px', background: 'var(--card)', color: 'var(--text)',
+              borderRadius: 50, fontFamily: 'DM Sans, sans-serif',
+              fontSize: 13, fontWeight: 600, textDecoration: 'none',
+              border: '1px solid var(--border)',
+              transform: 'translateY(4px)', transition: 'transform 0.2s, background 0.2s',
             }}
             onMouseOver={e => e.currentTarget.style.transform = 'translateY(0)'}
             onMouseOut={e => e.currentTarget.style.transform = 'translateY(4px)'}
