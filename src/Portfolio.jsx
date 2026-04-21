@@ -3,6 +3,7 @@ import {
   Github, Linkedin, Mail, Phone, Download,
   ExternalLink, ChevronRight, Code2, Server,
   Smartphone, Database, Wrench, Globe, Sun, Moon,
+  Briefcase, MapPin,
 } from 'lucide-react';
 import './portfolio.css';
 import fr from './fr';
@@ -46,7 +47,7 @@ export default function Portfolio() {
         <a href="#about" className="nav__logo">YM<span style={{ color: 'var(--muted)' }}>.</span></a>
 
         <div className="nav__links">
-          {['about', 'skills', 'projects', 'contact'].map(s => (
+          {['about', 'skills', 'experience', 'projects', 'contact'].map(s => (
             <a key={s} href={`#${s}`} className="nav__link">{t.nav[s]}</a>
           ))}
         </div>
@@ -196,6 +197,24 @@ export default function Portfolio() {
         </div>
       </section>
 
+      {/* ── EXPERIENCE ──────────────────────────────────────── */}
+      <section id="experience" className="experience-section grid-bg">
+        <div style={{ maxWidth: 1100, margin: '0 auto' }}>
+          <span className="section-label">{t.experience.section_label}</span>
+          <h2 className="section-title">{t.experience.title}</h2>
+
+          <div className="experience-timeline">
+            {t.experience.items.map((exp, idx) => (
+              <ExperienceCard
+                key={exp.id}
+                exp={exp}
+                isLast={idx === t.experience.items.length - 1}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── PROJECTS ────────────────────────────────────────── */}
       <section id="projects" className="projects-section grid-bg">
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
@@ -272,6 +291,67 @@ export default function Portfolio() {
         <p className="contact-footer">{t.contact.footer}</p>
       </section>
 
+    </div>
+  );
+}
+
+/* ─── ExperienceCard sub-component ──────────────────────────── */
+function ExperienceCard({ exp, isLast }) {
+  const { company, role, period, location, status, description, highlights, stack, color } = exp;
+
+  return (
+    <div className="exp-card">
+      {/* Timeline dot + line */}
+      <div className="exp-card__timeline">
+        <div className="exp-card__dot" style={{ background: color, boxShadow: `0 0 0 4px ${color}22` }} />
+        {!isLast && <div className="exp-card__line" />}
+      </div>
+
+      {/* Content */}
+      <div className="exp-card__content">
+        {/* Status pill */}
+        <div className="exp-card__meta">
+          <span
+            className="exp-card__status mono"
+            style={{
+              border: `1px solid ${color}40`,
+              color: color,
+              background: `${color}12`,
+            }}
+          >
+            {status}
+          </span>
+          <span className="exp-card__period mono">{period}</span>
+        </div>
+
+        {/* Role + Company */}
+        <h3 className="exp-card__role">{role}</h3>
+        <p className="exp-card__company">
+          <Briefcase size={14} style={{ display: 'inline', marginRight: 6, verticalAlign: 'middle' }} />
+          {company}
+          <span className="exp-card__separator"> · </span>
+          <MapPin size={12} style={{ display: 'inline', marginRight: 4, verticalAlign: 'middle' }} />
+          {location}
+        </p>
+
+        {/* Description */}
+        <p className="exp-card__description">{description}</p>
+
+        {/* Highlights */}
+        <ul className="exp-card__highlights">
+          {highlights.map(h => (
+            <li key={h} className="exp-card__highlight">
+              <span className="exp-card__highlight-arrow" style={{ color }}>›</span>
+              {h}
+            </li>
+          ))}
+        </ul>
+
+        {/* Stack */}
+        <div className="exp-card__tags">
+          {stack.map(tag => <span key={tag} className="tag">{tag}</span>)}
+        </div>
+      </div>
     </div>
   );
 }
